@@ -14,7 +14,7 @@ The rover uses a **custom 2-layer, 4x4 inch PCB** designed in **KiCad**, with po
 
 ## Firmware Architecture
 
-The firmware comprises **1200+ lines of C++** authored for this project, including **custom I2C, SPI, and PWM libraries** to handle bare-metal sensor communication and motor control.
+The firmware comprises **600+ lines of C++** authored for this project, including **custom I2C, SPI, and PWM libraries** to handle bare-metal sensor communication and motor control.
 
 ---
 

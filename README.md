@@ -8,7 +8,6 @@ This repository contains the firmware and hardware architecture for an autonomou
 
 ## Hardware Architecture
 
-![KiCad schematic - autonomous rover PCB](hardware/Schematic.png)
 
 The rover uses a **custom 2-layer, 4x4 inch PCB** designed in **KiCad**, with power distribution optimized to reliably interface an **ESP32**, **OV2640 camera**, and **L298N motor driver**.
 

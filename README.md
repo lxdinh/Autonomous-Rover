@@ -11,7 +11,7 @@
 > OV2640 camera runs on-board RGB565 obstacle detection, an MPU6050 IMU damps the
 > heading, and an L298N H-bridge drives the wheels — coordinated by a lightweight
 > **FORWARD → STOP → AVOID** state machine. Everything runs on the
-> microcontroller; there is no host PC in the loop.
+> microcontroller.
 
 ## Highlights
 

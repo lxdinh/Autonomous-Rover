@@ -83,16 +83,6 @@ Autonomous-Rover/
 | L298N IN3 / IN4 — right dir | 42 / 41 | | SPI MISO | 13 |
 | Camera CS | 10 | | SPI MOSI | 11 |
 
-> **⚠️ Two ESP32-S3 wiring caveats this firmware deliberately handles — mind them if you re-pin:**
->
-> 1. **GPIO43/44 are UART0.** They are reused here as the motor IN1/IN2 lines, so
->    the build routes `Serial` to the **native USB-CDC** port
->    (`-DARDUINO_USB_CDC_ON_BOOT=1`). Flash and monitor on the board's **USB**
->    port, not the **UART** port.
-> 2. **GPIO39–42 are the default JTAG pins** (MTCK/MTDO/MTDI/MTMS). They drive the
->    L298N here, so hardware JTAG debugging is unavailable while the motors are
->    wired.
-
 ### Schematic
 
 ![Rover schematic](hardware/Schematic.png)

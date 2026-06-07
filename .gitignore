@@ -1,0 +1,21 @@
+# PlatformIO build output / metadata
+.pio/
+.pioenvs/
+.piolibdeps/
+.vscode/
+.clangd/
+compile_commands.json
+
+# KiCad regenerable caches & backups (should never be committed)
+fp-info-cache
+*-backups/
+*.kicad_prl-bak
+*-bak
+*.bak
+\#auto_saved_files#
+*.000
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp

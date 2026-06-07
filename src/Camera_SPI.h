@@ -151,7 +151,10 @@ class CameraSPI {
   uint16_t _lastW, _lastH;
   uint32_t _pixelOff = 0;
 
-  uint8_t *pixelDataPtr() {
+  // const: only reads members. Returning a non-const uint8_t* is valid because
+  // object-constness does not make the pointed-to framebuffer const. This lets
+  // both frameBuffer() overloads (const and non-const) call it.
+  uint8_t *pixelDataPtr() const {
     if (!_frameDma) return nullptr;
     return _frameDma + _pixelOff;
   }

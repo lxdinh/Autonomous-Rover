@@ -208,7 +208,9 @@ void loop() {
 
       if (obs && roverState == STATE_FORWARD) {
         roverState = STATE_STOP;
-        stopStateEnteredMs = millis();
+        stopStateEnteredMs = now;  // use the loop's timestamp; a fresh millis()
+                                   // here is > now and underflows the unsigned
+                                   // (now - stopStateEnteredMs) hold check below.
         Serial.println("State -> STOP (cut motors briefly)");
       }
     }

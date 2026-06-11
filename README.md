@@ -58,7 +58,7 @@ Autonomous-Rover/
 │   ├── Sensor_I2C.h        # MPU6050 IMU (accel/gyro), bare-metal I2C
 │   └── MotorDriver_PWM.h   # L298N via ESP32 LEDC PWM (Arduino core 2.x/3.x aware)
 ├── include/memorysaver.h   # ArduCAM camera-model selector (OV2640 Mini 2MP)
-├── hardware/               # KiCad project, schematic (PNG), Gerbers
+├── hardware/               # KiCad project, schematic (SVG), Gerbers
 ├── platformio.ini
 └── README.md
 ```
@@ -85,7 +85,7 @@ Autonomous-Rover/
 
 ### Schematic
 
-![Rover schematic](hardware/Schematic.png)
+![Rover schematic](hardware/Schematic.svg)
 
 ## How obstacle detection works
 
